@@ -2,7 +2,7 @@ const Booking = require("../models/BookingModel");
 const nodemailer = require("nodemailer");
 const Professional = require('../models/Professional');
 const sendEmail = require("../utils/sendEmail");
-const User = require('../models/UserModel'); // Make sure this is imported
+const User = require('../models/userModel'); // Make sure this is imported
 const cloudinary = require("../utils/cloudinary");
 
 // 1.🟥 User creates booking (quote request)

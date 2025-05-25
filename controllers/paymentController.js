@@ -1,7 +1,7 @@
 // const Stripe =require( "stripe");
 // const dotenv =require( "dotenv");
 // const Payment =require( "../models/PaymentMethod.js");
-// const User =require( "../models/UserModel.js");
+// const User =require( "../models/userModel.js");
 
 // dotenv.config();
 // const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);

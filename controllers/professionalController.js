@@ -1,5 +1,5 @@
 const Professional = require("../models/Professional");
-const User = require("../models/UserModel");
+const User = require("../models/userModel");
 const Project = require("../models/ProjectModel"); // ✅ Add this
 const Review = require("../models/ReviewModel"); // ✅ Add this
 const Shop = require("../models/ShopModel"); // ✅ Add this

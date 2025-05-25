@@ -1,5 +1,5 @@
 const Subscription = require("../models/Subscription");
-const User = require('../models/UserModel.js');
+const User = require('../models/userModel.js');
 const Professional = require("../models/Professional");
 
 exports.isPremiumPlan = async (req, res) => {

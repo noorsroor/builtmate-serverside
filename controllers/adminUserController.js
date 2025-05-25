@@ -1,4 +1,4 @@
-const User =require( "../models/UserModel.js");
+const User =require( "../models/userModel.js");
 // Get all users (excluding deleted ones)
 exports.getAllUsers = async (req, res) => {
   try {

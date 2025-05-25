@@ -1,4 +1,4 @@
-const User =require( "../models/UserModel.js");
+const User =require( "../models/userModel.js");
 const Professional =require( "../models/Professional.js");
 const Booking =require( "../models/BookingModel.js");
 const Project =require( "../models/ProjectModel.js");

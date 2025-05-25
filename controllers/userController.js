@@ -1,4 +1,4 @@
-const User = require("../models/UserModel");
+const User = require("../models/userModel");
 const Bookmark = require("../models/Bookmark");
 const Professional = require("../models/Professional");
 const Project = require("../models/ProjectModel");

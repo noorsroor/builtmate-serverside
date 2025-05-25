@@ -1,5 +1,5 @@
 const Professional = require('../models/Professional');
-const User = require('../models/UserModel');
+const User = require('../models/userModel');
 
 exports.getProfessionals = async (req, res) => {
   try {
