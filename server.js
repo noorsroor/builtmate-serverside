@@ -30,10 +30,27 @@ connectDB();
 
 const app = express();
 
+const allowedOrigins = [
+  'https://builtmate-client.vercel.app',
+  'https://builtmate-client-noorsroors-projects.vercel.app'
+];
+
+app.use(cors({
+  origin: function (origin, callback) {
+    if (!origin || allowedOrigins.includes(origin.replace(/\/$/, ''))) {
+      callback(null, true);
+    } else {
+      callback(new Error('Not allowed by CORS'));
+    }
+  },
+  credentials: true,
+}));
+
+
 // Middleware
 app.use(express.json()); // Parse JSON requests
 app.use(express.urlencoded({ extended: true })); // Parse URL-encoded data
-app.use(cors({ origin: process.env.CLIENT_URL, credentials: true })); // Enable CORS for frontend
+// app.use(cors({ origin: process.env.CLIENT_URL, credentials: true })); // Enable CORS for frontend
 app.use(cookieParser()); // Handle cookies
 app.use(morgan('dev')); // Log requests
 app.use(helmet()); // Security headers
